@@ -7,6 +7,7 @@ Private instance attribute: size
 class Square:
     """class that defines a square"""
     def __init__(self, size=0):
+        """Initializes a Square instance."""
         if type(size) is not int:
             raise TypeError("size must be an integer")
         if size < 0:
@@ -15,10 +16,12 @@ class Square:
 
     @property
     def size(self):
+        """Get the size of the square."""
         return self.__size
 
     @size.setter
     def size(self, value):
+        """Set the size of the square."""
         if type(value) is not int:
             raise TypeError("size must be an integer")
         if value < 0:
@@ -26,9 +29,11 @@ class Square:
         self.__size = value
 
     def area(self):
+        """Area of the square"""
         return self.__size ** 2
 
     def my_print(self):
+        """Print the square"""
         if self.__size == 0:
             print("")
         else:
