@@ -12,8 +12,9 @@
 >>> print(add_integer(100.3, -2))
 98
 
->>> print(add_integer(100.3, -2.4))
-98
+>>> print(add_integer('c', 'd'))
+Traceback (most recent call last):
+TypeError: a must be an integer
 
 >>> print(add_integer(1, 'a'))
 Traceback (most recent call last):
