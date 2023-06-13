@@ -1,11 +1,14 @@
 #!/usr/bin/python3
-def add_integer(a, b=98):
-    """function that adds 2 integers.
-    Args:
-    a: integer (or float)
-    b: integer (or float)
+"""
+Function that adds 2 integers
+args: a and b must be integers or float
+Return: the addition of 2 integers
+"""
 
-    Return: The addition of a and b
+
+def add_integer(a, b=98):
+    """
+    function that adds 2 integers.
     """
     if type(a) is not int and type(a) is not float or a is None:
         raise TypeError("a must be an integer")
