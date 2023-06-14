@@ -9,6 +9,7 @@ Private instance attribute: height.
 class Rectangle:
     """class that defines a rectangle"""
     number_of_instances = 0
+
     def __init__(self, width=0, height=0):
         """Initializes a Rectangle instance."""
         if type(width) is not int:
