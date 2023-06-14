@@ -17,6 +17,5 @@ def text_indentation(text):
         text = (delim + "\n\n").join(
             [line.strip(" ") for line in text.split(delim)])
 
-    if text[-1] == '\n':
-        del text[-1]
-    print(text, end="")
+    new_text = text[:-1]
+    print(new_text, end="")
