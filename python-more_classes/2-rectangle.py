@@ -1,6 +1,8 @@
 #!/usr/bin/python3
 """
-
+Write a class Rectangle that defines a rectangle by:
+Private instance attribute: width.
+Private instance attribute: height.
 """
 
 
@@ -48,9 +50,11 @@ class Rectangle:
         self.__height = value
 
     def area(self):
+        """Area of the rectangle"""
         return self.__width * self.__height
 
     def perimeter(self):
+        """Perimeter of the rectangle"""
         if self.__width == 0 or self.__height == 0:
             return 0
         return (self.__width + self.__height) * 2
