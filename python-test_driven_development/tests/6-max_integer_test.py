@@ -26,11 +26,9 @@ class TestMaxInteger(unittest.TestCase):
 
     def test_duplicated_numbers(self):
         self.assertEqual(max_integer([1, 1, 1, 1]), 1)
-    
+
     def test_float_list(self):
         self.assertEqual(max_integer([1.2, 4.1, 3.6, 2.2]), 4.1)
-
-    
 
     def test_isnone(self):
         with self.assertRaises(TypeError):
