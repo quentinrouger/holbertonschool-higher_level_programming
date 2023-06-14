@@ -12,11 +12,11 @@ class Rectangle:
         """Initializes a Rectangle instance."""
         if type(width) is not int:
             raise TypeError("width must be an integer")
-        if width < 0:
+        elif width < 0:
             raise ValueError("width must be >= 0")
         if type(height) is not int:
             raise TypeError("height must be an integer")
-        if height < 0:
+        elif height < 0:
             raise ValueError("height must be >= 0")
         self.__height = height
         self.__width = width
@@ -31,7 +31,7 @@ class Rectangle:
         """Set the width of the rectangle."""
         if type(value) is not int:
             raise TypeError("width must be an integer")
-        if value < 0:
+        elif value < 0:
             raise ValueError("width must be >= 0")
         self.__width = value
 
@@ -45,6 +45,6 @@ class Rectangle:
         """Set the height of the rectangle."""
         if type(value) is not int:
             raise TypeError("height must be an integer")
-        if value < 0:
+        elif value < 0:
             raise ValueError("height must be >= 0")
         self.__height = value
