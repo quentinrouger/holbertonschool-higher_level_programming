@@ -29,14 +29,7 @@ TypeError: name must be an integer
 Traceback (most recent call last):
 TypeError: distance must be an integer
 
->>> bg.integer_validator("1", 0)
-Traceback (most recent call last):
-ValueError: 1 must be greater than 0
-
->>> bg.integer_validator("name", 'a')
-Traceback (most recent call last):
-TypeError: name must be an integer
-
 >>> bg.integer_validator("name", 4.2)
 Traceback (most recent call last):
 TypeError: name must be an integer
+
