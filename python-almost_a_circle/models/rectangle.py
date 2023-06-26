@@ -122,4 +122,9 @@ class Rectangle(Base):
         """
         Returns the dictionary representation of a Rectangle.
         """
-        return self.__dict__
+        return {'id': self.id,
+                'width': self.width,
+                'height': self.height,
+                'x': self.x,
+                'y': self.y
+                }
