@@ -117,3 +117,9 @@ class Rectangle(Base):
             self.height = kwargs.get('height', self.height)
             self.x = kwargs.get('x', self.x)
             self.y = kwargs.get('y', self.y)
+
+    def to_dictionary(self):
+        """
+        Returns the dictionary representation of a Rectangle.
+        """
+        return self.__dict__
