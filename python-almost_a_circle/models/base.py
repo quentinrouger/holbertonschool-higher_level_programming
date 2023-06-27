@@ -46,3 +46,13 @@ class Base:
             json_data = "[]"
         with open(filename, "w") as file:
             file.write(json_data)
+
+    @staticmethod
+    def from_json_string(json_string):
+        """
+        returns the list of the JSON string representation json_string.
+        """
+        if json_string is None or json_string == "":
+            return "[]"
+        else:
+            return json.dumps(json_string)
