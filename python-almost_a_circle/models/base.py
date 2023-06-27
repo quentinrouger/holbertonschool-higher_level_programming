@@ -45,4 +45,4 @@ class Base:
         else:
             json_data = "[]"
         with open(filename, "w") as file:
-            json.dump(json_data, file)
+            file.write(json_data)
