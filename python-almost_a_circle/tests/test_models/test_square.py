@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-Add unit test for the class Square.
+Defines unittests for models/square.py.
 """
 import os
 import unittest
