@@ -8,6 +8,18 @@ import sys
 
 
 def get_all_states(mysql_username, mysql_password, database_name):
+    """
+    Retrieves and prints all the states from the 'states' table in the given
+    MySQL database.
+
+    Parameters:
+        mysql_username (str): The MySQL database username.
+        mysql_password (str): The MySQL database password.
+        database_name (str): The name of the MySQL database.
+
+    Returns:
+        None
+    """
 
     db = MySQLdb.connect(
         host="localhost", port=3306,
