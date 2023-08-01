@@ -5,17 +5,19 @@ import MySQLdb
 import sys
 
 
-conn = MySQLdb.connect(
+def get_all_states(mysql_username, mysql_password, database_name):
+    
+    conn = MySQLdb.connect(
         host="localhost", port=3306,
         user=mysql_username, passwd=mysql_password, db=database_name
     )
-cur = conn.cursor()
-cur.execute("SELECT * FROM states ORDER BY id ASC")
-query_rows = cur.fetchall()
-for row in query_rows:
-    print(row)
-cur.close()
-conn.close()
+    cur = conn.cursor()
+    cur.execute("SELECT * FROM states ORDER BY id ASC")
+    query_rows = cur.fetchall()
+    for row in query_rows:
+        print(row)
+    cur.close()
+    conn.close()
 
 if __name__ == "__main__":
     mysql_username, mysql_password, database_name = sys.argv[1],\
